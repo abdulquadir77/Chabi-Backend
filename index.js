@@ -17,7 +17,7 @@ app.use(
 );
 
 app.get("/", (req, res) => {
-  res.send("Welcome To EVALUATION 4");
+  res.send("Welcome To Chabi");
 });
 
 app.post("/signup", async (req, res) => {
