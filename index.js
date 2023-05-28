@@ -76,7 +76,7 @@ app.post("/score", authentication, async (req, res) => {
 app.get("/score", authentication, async (req, res) => {
   const { userID } = req.body;
   try {
-    const user_score = await ScoreModel.findOne({ userID });
+    const user_score = await ScoreModel.find({ userID });
     res.send({ smg: user_score });
   } catch (error) {
     console.log(error);
